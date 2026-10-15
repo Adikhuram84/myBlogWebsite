@@ -1,0 +1,1076 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Explore the writing portfolio of Adilah Khurram. Essays on psychology, human behavior, AI companions, and emotional connection.">
+
+  <title>Adilah Khurram | Writer & Content Creator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f8f4ed;
+      --white: #fffdf9;
+      --wine: #783d4b;
+      --dark: #282421;
+      --muted: #77716b;
+      --line: #e6ddd2;
+      --sage: #e2e7dc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--dark);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(248, 244, 237, 0.96);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: var(--wine);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: 13px;
+    }
+
+    .nav-links a:hover {
+      color: var(--wine);
+    }
+
+    .nav-button {
+      border: 1px solid var(--wine);
+      color: var(--wine);
+      padding: 8px 15px;
+      border-radius: 30px;
+    }
+
+    /* Hero section */
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      align-items: center;
+      gap: 65px;
+      padding: 90px 0 75px;
+    }
+
+    .eyebrow {
+      color: var(--wine);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(43px, 6vw, 70px);
+      letter-spacing: -1.5px;
+      margin: 20px 0;
+    }
+
+    h1 em {
+      color: var(--wine);
+    }
+
+    .hero p {
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid var(--wine);
+      border-radius: 30px;
+      padding: 12px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .button-primary {
+      background: var(--wine);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: #592c37;
+    }
+
+    .button-outline {
+      color: var(--wine);
+    }
+
+    .button-outline:hover {
+      background: #eee3df;
+    }
+
+    .hero-art {
+      min-height: 340px;
+      display: grid;
+      place-items: center;
+    }
+
+    .art-card {
+      width: 290px;
+      max-width: 100%;
+      aspect-ratio: 0.83;
+      background: #e8ddd0;
+      border-radius: 150px 150px 5px 5px;
+      padding: 16px;
+      transform: rotate(2deg);
+    }
+
+    .art-inner {
+      height: 100%;
+      border: 1px solid #b99c94;
+      border-radius: 140px 140px 3px 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      background: linear-gradient(150deg, #f8eee1, #dfd0c0);
+    }
+
+    .art-letter {
+      font: 100px/1 "Playfair Display", serif;
+      color: var(--wine);
+    }
+
+    .art-line {
+      height: 1px;
+      width: 45px;
+      background: var(--wine);
+      margin: 20px 0;
+    }
+
+    .art-quote {
+      font: italic 19px/1.5 "Playfair Display", serif;
+    }
+
+    .art-caption {
+      margin-top: 20px;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Intro strip */
+
+    .focus-strip {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      padding: 24px 0;
+    }
+
+    .focus-strip div {
+      padding: 5px 12px;
+      border-right: 1px solid var(--line);
+    }
+
+    .focus-strip div:last-child {
+      border-right: none;
+    }
+
+    .focus-strip strong {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .focus-strip p {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* General sections */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2,
+    .about h2,
+    .contact h2 {
+      font-size: clamp(32px, 4vw, 45px);
+      margin-top: 10px;
+    }
+
+    .section-heading > p {
+      max-width: 390px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Search and category filters */
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    #search {
+      flex: 1 1 220px;
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: var(--white);
+      padding: 10px 16px;
+      outline: none;
+    }
+
+    #search:focus {
+      border-color: var(--wine);
+    }
+
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: transparent;
+      border-radius: 30px;
+      padding: 9px 14px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--wine);
+      border-color: var(--wine);
+      color: white;
+    }
+
+    /* Blog cards */
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .blog-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      border-radius: 7px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(40, 36, 33, 0.08);
+    }
+
+    .card-art {
+      min-height: 145px;
+      padding: 22px;
+      display: flex;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-art::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border: 1px solid rgba(120, 61, 75, 0.25);
+      border-radius: 50%;
+      top: -40px;
+      right: -20px;
+    }
+
+    .art-one { background: #e8ddd0; }
+    .art-two { background: var(--sage); }
+    .art-three { background: #ead8d6; }
+
+    .card-number {
+      font: 45px/1 "Playfair Display", serif;
+      color: var(--wine);
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-content {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .category {
+      color: var(--wine);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .card-content h3 {
+      font-size: 22px;
+      margin: 12px 0;
+    }
+
+    .card-content p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .read-link {
+      color: var(--wine);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: auto;
+      align-self: flex-start;
+    }
+
+    .read-link:hover {
+      text-decoration: underline;
+    }
+
+    .no-results {
+      display: none;
+      padding: 30px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* About */
+
+    .about {
+      background: #eee7dd;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.65fr 1.35fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .about-mark {
+      width: 190px;
+      height: 190px;
+      border: 1px solid #cdb9ae;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: auto;
+      font: 65px "Playfair Display", serif;
+      color: var(--wine);
+      background: rgba(255, 253, 249, 0.4);
+    }
+
+    .about p {
+      margin-top: 17px;
+      font-size: 14px;
+      color: #625a53;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .skill {
+      border: 1px solid #d1c2b5;
+      border-radius: 25px;
+      padding: 6px 11px;
+      font-size: 11px;
+      color: #67574f;
+    }
+
+    /* Publishing platforms */
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .platform {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 24px;
+      transition: 0.2s;
+    }
+
+    .platform:hover {
+      border-color: #b99c94;
+      transform: translateY(-2px);
+    }
+
+    .platform-icon {
+      display: grid;
+      place-items: center;
+      min-width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--wine);
+      color: white;
+      font: 22px "Playfair Display", serif;
+    }
+
+    .platform h3 {
+      font-size: 21px;
+    }
+
+    .platform p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Contact */
+
+    .contact {
+      background: #572b36;
+      color: #fff8f1;
+    }
+
+    .contact .eyebrow {
+      color: #e7c3c5;
+    }
+
+    .contact p {
+      color: #e0cfd0;
+      max-width: 580px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .contact .button {
+      margin-top: 25px;
+      border-color: #f0dede;
+      color: white;
+    }
+
+    .contact .button:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 25px 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-links a:hover {
+      color: var(--wine);
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 60px;
+      }
+
+      .hero-art {
+        min-height: 300px;
+      }
+
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .about-mark {
+        width: 140px;
+        height: 140px;
+        font-size: 50px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: 92%;
+      }
+
+      nav {
+        min-height: 68px;
+      }
+
+      .logo {
+        font-size: 19px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a:not(.nav-button) {
+        display: none;
+      }
+
+      .nav-button {
+        padding: 7px 10px;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 48px 0;
+      }
+
+      .hero-art {
+        min-height: 280px;
+      }
+
+      .focus-strip {
+        padding: 18px 0;
+      }
+
+      .focus-strip strong {
+        font-size: 15px;
+      }
+
+      .focus-strip p {
+        font-size: 9px;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading > p {
+        margin-top: 15px;
+      }
+
+      .blog-grid,
+      .platform-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-card {
+        min-height: 0;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">Adilah <span>Khurram.</span></a>
+
+      <div class="nav-links">
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+        <a href="#platforms">Publications</a>
+        <a class="nav-button" href="#contact">Contact ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- Home page -->
+    <section class="container hero">
+      <div>
+        <div class="eyebrow">Writer · Blogger · Content Creator</div>
+
+        <h1>
+          Exploring the mind,
+          <em>one story</em> at a time.
+        </h1>
+
+        <p>
+          I'm Adilah Khurram. I write about psychology, human behavior,
+          emotional connection, and the ways technology changes how we
+          understand ourselves and each other.
+        </p>
+
+        <div class="actions">
+          <a class="button button-primary" href="#writing">
+            Explore my writing ↓
+          </a>
+
+          <a class="button button-outline" href="#about">
+            About me
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-card">
+          <div class="art-inner">
+            <div class="art-letter">a.</div>
+            <div class="art-line"></div>
+            <div class="art-quote">
+              Understanding begins with paying attention.
+            </div>
+            <div class="art-caption">Notes on being human</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas of interest -->
+    <div class="container focus-strip">
+      <div>
+        <strong>Psychology</strong>
+        <p>Understanding people</p>
+      </div>
+
+      <div>
+        <strong>Human Stories</strong>
+        <p>Ideas with meaning</p>
+      </div>
+
+      <div>
+        <strong>Technology</strong>
+        <p>Life in a changing world</p>
+      </div>
+    </div>
+
+    <!-- Blog portfolio -->
+    <section id="writing">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Selected work</div>
+            <h2>Ideas worth exploring.</h2>
+          </div>
+
+          <p>
+            A collection of my writing on AI companions, emotional
+            attachment, parenting, and the psychology of human connection.
+          </p>
+        </div>
+
+        <div class="filters">
+          <input
+            type="search"
+            id="search"
+            placeholder="Search articles..."
+            aria-label="Search articles"
+          >
+
+          <button class="filter-btn active" data-category="all">
+            All articles
+          </button>
+
+          <button class="filter-btn" data-category="psychology">
+            Psychology & AI
+          </button>
+
+          <button class="filter-btn" data-category="parenting">
+            Parenting & technology
+          </button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+
+          <!-- Article 1 -->
+          <article class="blog-card" data-category="parenting">
+            <div class="card-art art-one">
+              <span class="card-number">01</span>
+            </div>
+
+            <div class="card-content">
+              <span class="category">Parenting & Technology</span>
+
+              <h3>
+                AI Companions and Your Teen: The Risks Every Parent Should Understand
+              </h3>
+
+              <p>
+                What parents should understand about AI friendships,
+                emotional dependence, privacy, warning signs, and
+                protecting real-world connections.
+              </p>
+
+              <a
+                class="read-link"
+                href="https://substack.com/@adilahkhurram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Find my original writing ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card" data-category="psychology">
+            <div class="card-art art-two">
+              <span class="card-number">02</span>
+            </div>
+
+            <div class="card-content">
+              <span class="category">Psychology & AI</span>
+
+              <h3>
+                Why People Bond With AI Companions: Emotional Attachment, Explained
+              </h3>
+
+              <p>
+                Why conversations with chatbots can feel personal,
+                how emotional attachment develops, and where comfort
+                ends and unhealthy dependence may begin.
+              </p>
+
+              <a
+                class="read-link"
+                href="https://substack.com/@adilahkhurram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Find my original writing ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card" data-category="psychology">
+            <div class="card-art art-three">
+              <span class="card-number">03</span>
+            </div>
+
+            <div class="card-content">
+              <span class="category">Psychology & AI</span>
+
+              <h3>
+                Why People Form Emotional Bonds With AI Companions
+                (and What It Does to Your Mind)
+              </h3>
+
+              <p>
+                An exploration of the research on AI attachment,
+                emotional well-being, loneliness, and the habits
+                that can affect our relationships.
+              </p>
+
+              <a
+                class="read-link"
+                href="https://medium.com/@AdilahKhuram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Find my original writing ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="no-results" id="noResults">
+          No matching articles. Try a different search.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-mark">AK</div>
+
+        <div>
+          <div class="eyebrow">Meet the writer</div>
+
+          <h2>Curious about people. Serious about words.</h2>
+
+          <p>
+            I'm Adilah Khurram, a writer and content creator interested
+            in psychology, human behavior, emotional connection, and
+            the influence of technology on everyday life.
+          </p>
+
+          <p>
+            I enjoy exploring complex ideas and presenting them in
+            accessible, engaging articles. My goal is to create writing
+            that informs readers, encourages reflection, and makes
+            unfamiliar concepts easier to understand.
+          </p>
+
+          <p>
+            I'm developing my skills in content writing, editorial
+            storytelling, audience research, and SEO-aware publishing.
+            This portfolio brings my selected work together in one place.
+          </p>
+
+          <div class="skills">
+            <span class="skill">Content Writing</span>
+            <span class="skill">Blogging</span>
+            <span class="skill">Psychology</span>
+            <span class="skill">Content Research</span>
+            <span class="skill">SEO Content</span>
+            <span class="skill">Storytelling</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- External publications -->
+    <section id="platforms">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">My publications</div>
+            <h2>Read more of my work.</h2>
+          </div>
+
+          <p>
+            Visit my publishing profiles to explore my writing
+            and follow future articles.
+          </p>
+        </div>
+
+        <div class="platform-grid">
+
+          <a
+            class="platform"
+            href="https://medium.com/@AdilahKhuram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="platform-icon">M</div>
+
+            <div>
+              <h3>Medium</h3>
+              <p>Explore my essays and articles ↗</p>
+            </div>
+          </a>
+
+          <a
+            class="platform"
+            href="https://substack.com/@adilahkhurram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="platform-icon">S</div>
+
+            <div>
+              <h3>Substack · Morpankh</h3>
+              <p>Follow my ongoing writing ↗</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="eyebrow">Writing opportunities</div>
+
+        <h2>Let's create something meaningful.</h2>
+
+        <p>
+          I'm interested in content writing, blogging, and copywriting
+          opportunities where research, clear communication, and a
+          thoughtful human voice make a difference.
+        </p>
+
+        <!-- Replace this email address with your professional email -->
+        <a
+          class="button"
+          href="mailto:YOUR_EMAIL@example.com"
+        >
+          Contact me ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>
+        © <span id="year"></span> Adilah Khurram. All rights reserved.
+      </p>
+
+      <div class="footer-links">
+        <a href="#home">Home ↑</a>
+        <a href="https://medium.com/@AdilahKhuram"
+           target="_blank" rel="noopener noreferrer">Medium</a>
+        <a href="https://substack.com/@adilahkhurram"
+           target="_blank" rel="noopener noreferrer">Substack</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Current year in the footer
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Article search and category filtering
+    const searchInput = document.getElementById("search");
+    const cards = document.querySelectorAll(".blog-card");
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const noResults = document.getElementById("noResults");
+
+    let activeCategory = "all";
+
+    function filterArticles() {
+      const query = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const category = card.dataset.category;
+        const text = card.textContent.toLowerCase();
+
+        const categoryMatches =
+          activeCategory === "all" ||
+          category === activeCategory;
+
+        const searchMatches = text.includes(query);
+        const visible = categoryMatches && searchMatches;
+
+        card.style.display = visible ? "flex" : "none";
+
+        if (visible) visibleCount++;
+      });
+
+      noResults.style.display =
+        visibleCount === 0 ? "block" : "none";
+    }
+
+    searchInput.addEventListener("input", filterArticles);
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        activeCategory = button.dataset.category;
+
+        filterButtons.forEach(item => {
+          item.classList.toggle("active", item === button);
+        });
+
+        filterArticles();
+      });
+    });
+  </script>
+
+</body>
+</html>
